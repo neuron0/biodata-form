@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BIODATA</title>
+    <link rel="stylesheet" href="form1.css">
+    <script type="text/javascript" src="form1.js"></script>
+  </head>
+  <body >
+   
+    <div class="container"  id= "maincontainer">
+      <div class="detail">
+    <h1>BIODATA</h1>
+  
+      <table>
+        <tr>
+          <td>Name (in full):</td><td>
+            <input type="text" name="full name" maxlength="40" id="fullname" onchange=getfullname() />
+          </td>
+        </tr>
+        <tr>
+          <td>Address:</td><td><input type="text" name="Address" maxlength="70" id="Address" onchange=getAddress()></td>
+        </tr>
+        <tr>
+          <td>Email Address:</td><td><input type="text" name="email" maxlength="40" id="email" onchange=getEmail()></td>
+        </tr>
+        <tr>
+          <td>Date of Birth:</td><td><input type="date" name="DOB" id="DOB" onchange=getDOB()></td>
+        </tr>
+        <tr>
+          <td>Country:</td>
+          <td>
+            <select id="country" onchange=getcountry() >
+   <option value="-----">------</option>
+   <option value="Nigeria" >Nigeria</option>
+   <option value="Others">OTHERS</option>
+          </select>
+          </td>
+        </tr>
+        <tr>
+          <td>State:</td>
+          <td>
+      <select id="State" onchange=getState()>
+<option>Outside Nigeria</option>
+<option>ABUJA FCT</option>
+<option>ABIA</option>
+<option>ADAMAWA</option>
+<option>AKWA IBOM</option>
+<option>ANAMBRA</option>
+<option>BAUCHI</option>
+<option>BAYELSA</option>
+<option>BENUE</option>
+<option>BORNO</option>
+<option>CROSS RIVER</option>
+<option>DELTA</option>
+<option>EBONYI</option>
+<option>EDO</option>
+<option>EKITI</option>
+<option>ENUGU</option>
+<option>GOMBE</option>
+<option>IMO</option>
+<option>JIGAWA</option>
+<option>KADUNA</option>
+<option>KANO</option>
+<option>KATSINA</option>
+<option>KEBBI</option>
+<option>KOGI</option>
+<option>KWARA</option>
+<option>LAGOS</option>
+<option>NASSARAWA</option>
+<option>NIGER</option>
+<option>OGUN</option>
+<option>ONDO</option>
+<option>OSUN</option>
+<option>OYO</option>
+<option>PLATEAU</option>
+<option>RIVERS</option>
+<option>SOKOTO</option>
+<option>TARABA</option>
+<option>YOBE</option>
+<option>ZAMFARA</option>
+</select>
+    </td>
+    <tr>
+      <td>Gender:</td>
+      <td><input type="radio" name="gender" value="Male" id="male" onclick=getgender("male")>Male</td>
+      <td><input type="radio" name="gender" value="Female" id="female" onclick=getgender("female")>Female</td>
+    </tr>
+    <tr>
+      <br>
+    <td>Educational qualification:</td>
+      <td>
+        
+        <select id="qualification" onchange=getqual()>
+        <option > PhD</option>
+        <option > Masters</option>
+        <option > BSc</option>
+        <option > HND</option>
+        <option> ND</option>
+        <option> NCE</option>
+        <option> Others</option>
+      </select>
+    </td>
+    </tr>
+    <tr>
+      <td>Years of experience</td>
+      <td><input type="number" name="experience" id="Year" onchange="getYear()"></td>
+    </tr>
+      </table>
+      <p> <button onclick=hidemain()>  Submit  </button>
+      </p>
+    </div>
+    </div>
+  <div id="secondmain" style="display: none;">
+    <h1>BIODATA</h1>
+    <table>
+      <tr>
+        <td>Name (in full):</td><td><span id="displayfullname"></span></td>
+      </tr>
+      <tr>
+        <td>Address:</td><td><span id="displayAddress"></span></td>
+      </tr>
+      <tr>
+        <td>Email Address:</td><td><span id="displayEmail"></span></td>
+      </tr>
+      <tr>
+        <td>Date of Birth:</td><td><span id="displayDOB"></span></td>
+      </tr>
+      <td>Country:</td>
+      <td>
+        <span id="displaycountry"></span>
+      </td>
+    </tr>
+    <tr>
+      <td>State:</td>
+      <td><span id="displayState"></span></td>
+      <tr>
+
+
+      <td>Gender:</td>
+      <td>
+          <span id="displaygender"></span>
+      </td>
+      </tr>
+      <tr>
+        <td>Educational qualification:</td>
+          <td>
+            <span id="displayQ"></span>
+          </td>
+      </tr>
+      <tr>
+        <td>Years of experience:</td>
+        <td>
+          <span id="displayYear"></span>
+        </td>
+      </tr>
+  
+  </div>
+   
+
+    
+  </body>
+</html>
